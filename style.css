@@ -1,0 +1,32 @@
+:root {
+    --mn-bg-color:hsl(0, 0%, 81%);
+    --card-bg-1:hsl(263, 55%, 52%);
+    --card-bg-2:hsl(217, 19%, 35%);
+    --card-bg-white:hsl(0, 0%, 100%);
+    --card-bg-4:hsl(219, 29%, 14%);
+    --mnn-txt-light:hsl(224, 10%, 45%);
+    --mn-txt-dark:hsl(260, 100%, 95%);
+    --mn-shadow-color:hsl(214, 17%, 92%);
+    --mn-colon-color:hsl(264, 82%, 80%);
+    --Barlow:'Barlow Semi Condensed', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: var(--Barlow);
+    font-size: 0.8125rem;
+    background-color: var(--mn-bg-color);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

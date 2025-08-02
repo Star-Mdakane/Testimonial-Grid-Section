@@ -13,18 +13,18 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Purple 50: hsl(260, 100%, 95%)
-- Purple 300: hsl(264, 82%, 80%)
-- Purple 500: hsl(263, 55%, 52%)
+- Purple 50: --mn-txt-dark:hsl(260, 100%, 95%) d
+- Purple 300: --mn-colon-color:hsl(264, 82%, 80%) d
+- Purple 500: --card-bg-1:hsl(263, 55%, 52%) d
 
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
-- Grey 100: hsl(214, 17%, 92%)
-- Grey 200: hsl(0, 0%, 81%)
-- Grey 400: hsl(224, 10%, 45%)
-- Grey 500: hsl(217, 19%, 35%)
-- Dark blue: hsl(219, 29%, 14%)
+- White: --card-bg-white:hsl(0, 0%, 100%) d
+- Grey 100: --mn-shadow-color:hsl(214, 17%, 92%) d
+- Grey 200: --mn-bg-color:hsl(0, 0%, 81%) d
+- Grey 400: --mnn-txt-light:hsl(224, 10%, 45%) d
+- Grey 500: --card-bg-2:hsl(217, 19%, 35%) d
+- Dark blue: --card-bg-4:hsl(219, 29%, 14%) d
 - Black: hsl(0, 0%, 7%)
 
 ## Typography
