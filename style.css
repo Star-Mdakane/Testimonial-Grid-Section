@@ -8,6 +8,7 @@
     --mn-txt-dark:hsl(260, 100%, 95%);
     --mn-shadow-color:hsl(214, 17%, 92%);
     --mn-colon-color:hsl(264, 82%, 80%);
+    --shadow:hsl(0, 0%, 7%);
     --Barlow:'Barlow Semi Condensed', sans-serif;
 }
 
@@ -19,9 +20,98 @@
     padding: 0;
 }
 body {
+    position: relative;
     font-family: var(--Barlow);
     font-size: 0.8125rem;
     background-color: var(--mn-bg-color);
+    line-height: 1.5;
+    padding: 2rem;
+}
+
+.wrapper {
+    max-width: 90rem;
+    margin-inline: auto;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: minmax(23.45, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    min-width: 23.45rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 100%;
+    position: absolute;
+}
+
+.img {
+    background-size: cover;
+    margin-right: 1rem;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 3px solid var(--mn-colon-color);
+}
+
+.img.one {
+    background-image: url(/images/image-daniel.jpg);
+}
+.img.two {
+    background-image: url(/images/image-jonathan.jpg);
+}
+.img.three {
+    background-image: url(/images/image-jeanette.jpg);
+}
+.img.four {
+    background-image: url(/images/image-patrick.jpg);
+}
+.img.five {
+    background-image: url(/images/image-kira.jpg);
+}
+
+.card h1 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-weight: 500;
+}
+
+section > div:nth-of-type(1) {
+    background-color: var(--card-bg-1);
+    color: var(--mn-txt-dark);
+}
+section > div:nth-of-type(2) {
+    background-color: var(--card-bg-2);
+    color: var(--mn-txt-dark);
+}
+section > div:nth-of-type(3) {
+    background-color: var(--card-bg-white);
+    color: var(--mnn-txt-light);
+
+}
+section > div:nth-of-type(4) {
+    background-color: var(--card-bg-4);
+    color: var(--mn-txt-dark);
+
+}
+section > div:nth-of-type(5) {
+    background-color: var(--card-bg-white);
+    color: var(--mnn-txt-light);
+
 }
 
 .attribution {
