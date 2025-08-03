@@ -24,7 +24,7 @@ body {
     font-family: var(--Barlow);
     font-size: 0.8125rem;
     background-color: var(--mn-bg-color);
-    height: 100%S;
+    height: 100%;
     line-height: 1.5;
     padding: 2rem;
     display: flex;
