@@ -148,22 +148,6 @@ section > div:nth-of-type(5) {
     background-blend-mode: lighten;
  }
 
- /* .content-wrap {
-    z-index: 1;
- } */
-
- /* section > div:nth-of-type(1)::before */
-
-/* .content-wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 4.5rem;
-    width: 130px;
-    height: 130px;
-   
-} */
-
 
 section > div:nth-of-type(2) {
   grid-column: 3 / 4;
