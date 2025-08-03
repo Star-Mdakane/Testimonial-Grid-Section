@@ -24,8 +24,12 @@ body {
     font-family: var(--Barlow);
     font-size: 0.8125rem;
     background-color: var(--mn-bg-color);
+    height: 100%S;
     line-height: 1.5;
     padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper {
@@ -33,21 +37,26 @@ body {
     margin-inline: auto;
     padding: 1rem;
     display: grid;
-    grid-template-columns: minmax(23.45, 1fr);
-    gap: 1rem;
+    grid-template-columns: minmax(23.45rem, 1fr);
+    gap: 2rem;
+    margin-bottom: 1rem;
 }
 
 .card {
     min-width: 23.45rem;
-    padding: 1rem;
+    padding: 3rem;
     border-radius: 0.5rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.3);
 }
 
 .bio {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
+}
+
+.bio p {
+    font-weight: 900;
 }
 
 img {
@@ -82,8 +91,9 @@ img {
 }
 
 .card h1 {
-    font-weight: 600;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    line-height: 1.8rem;
 }
 
 .card p {
@@ -119,4 +129,56 @@ section > div:nth-of-type(5) {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+}
+
+@media (min-width: 45rem) {
+ .wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+ }
+
+ section > div:nth-of-type(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    position: relative;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 right 4rem;
+    background-size: 130px 130px;
+    background-blend-mode: lighten;
+ }
+
+ /* .content-wrap {
+    z-index: 1;
+ } */
+
+ /* section > div:nth-of-type(1)::before */
+
+/* .content-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 4.5rem;
+    width: 130px;
+    height: 130px;
+   
+} */
+
+
+section > div:nth-of-type(2) {
+  grid-column: 3 / 4;
+}
+section > div:nth-of-type(3) {
+    
+}
+
+section > div:nth-of-type(4) {
+    grid-column: 2 / 4;
+
+}
+section > div:nth-of-type(5) {
+    grid-column:4 / 5;
+    grid-row: 1 / 3;
+}
+
 }

@@ -25,7 +25,7 @@ The designs were created to the following widths:
 - Grey 400: --mnn-txt-light:hsl(224, 10%, 45%) d
 - Grey 500: --card-bg-2:hsl(217, 19%, 35%) d
 - Dark blue: --card-bg-4:hsl(219, 29%, 14%) d
-- Black: hsl(0, 0%, 7%)
+- Black: --shadow-hsl(0, 0%, 7%)
 
 ## Typography
 
